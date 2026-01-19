@@ -29,7 +29,6 @@ import { MyAnalysesPage, SharedWorkspacesPage } from './pages/PlaceholderPages';
 function App() {
   return (
     <DataProvider>
-      <Router>
         <Toast />
         <Routes>
           {/* Public Routes */}
@@ -55,7 +54,6 @@ function App() {
           <Route path="/admin-logs" element={<AdminLogsPage />} />
           <Route path="/admin-settings" element={<AdminSettingsPage />} />
         </Routes>
-      </Router>
     </DataProvider>
   );
 }
